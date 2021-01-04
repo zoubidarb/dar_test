@@ -26,6 +26,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       <field name="model">res.partner</field>
       <field name="inherit_id" ref="base.view_partner_form" />
       <field name="arch" type="xml">
+        <sheet position="before">
+          <header>
+            <button name="%(darbtech_res_partner_crm_lead_wizard_action)d"
+                    string="Add lead"
+                    type="action"/>
+          </header>
+        </sheet>
         <notebook position="inside">
           <page name="crm_qualification" string="CRM Qualification">
             <field name="lead_ids">
