@@ -24,7 +24,7 @@ from odoo.exceptions import ValidationError
 _LOGGER = logging.getLogger(__name__)
 
 class ResPartner(models.Model):
-    """ DALBY CRM partner adaptations """
+    """ Darbtech CRM partner adaptations """
     _inherit = 'res.partner'
 
     lead_ids = fields.One2many('crm.lead', 'partner_id')

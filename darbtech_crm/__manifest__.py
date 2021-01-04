@@ -32,6 +32,9 @@
     'installable': True,
     'depends': ['crm'],
     'data': [
+        #Wizard
+        'wizard/darbtech_res_partner_crm_lead_wizard_views.xml',
+        #views
         'views/crm_lead_views.xml',
         'views/res_partner_views.xml'
     ]
