@@ -39,5 +39,9 @@
         'views/res_partner_views.xml',
         #templates
         'views/lead_portal_templates.xml',
-    ]
+        'views/templates.xml',
+    ],
+    "qweb": [
+        "static/src/xml/documentation.xml",
+        ],
 }

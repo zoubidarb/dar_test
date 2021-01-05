@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="darbtech_assets_backend" name="darbtech assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/darbtech_crm/static/src/js/documentation.js"></script>
+        </xpath>
+    </template>
+
+</odoo>

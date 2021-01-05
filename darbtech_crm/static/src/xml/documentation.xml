@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <t t-name="DisplayDocumentation">
+        <li title="Documentation">
+            <a href="_s + '/spp_app/static/src/doc/Documentation.pdf" target="_blank">
+                <i class="fa fa-file-pdf-o"/> <span id="documentation"/>
+            </a>
+        </li>
+    </t>
+
+</templates>
+
