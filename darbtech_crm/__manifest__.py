@@ -18,7 +18,7 @@
 {
     'name': 'Darbtech CRM',
     'summary': 'Darbtech CRM customizations',
-    'description': ''' It consists :    
+    'description': ''' It consists :
       * Add reminder_date to leads
       * add leads to web portal
       * Add a wizard on contact form to create leads
@@ -30,7 +30,7 @@
     'license': 'AGPL-3',
     'application': True,
     'installable': True,
-    'depends': ['crm'],
+    'depends': ['crm', 'website'],
     'data': [
         #Wizard
         'wizard/darbtech_res_partner_crm_lead_wizard_views.xml',
