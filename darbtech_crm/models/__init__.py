@@ -16,4 +16,4 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-from . import crm_lead, res_partner
+from . import crm_lead, res_partner, res_users

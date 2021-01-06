@@ -33,6 +33,7 @@ class CrmLead(models.Model):
 
     @api.onchange('partner_name')
     def onchange_partner_name(self):
+        """ Autofill contact_name and title """
         if self.partner_name:
             parent = self.env['res.partner'].search([('name', '=', self.partner_name)], limit=1)
             if parent:
@@ -41,31 +42,3 @@ class CrmLead(models.Model):
                     values = {'contact_name': client.name,
                               'title': client.title}
                     self.update(values)
-
-
-
-        """if partner_id:
-            partner = self.env['res.partner'].browse(partner_id)
-
-            partner_name = partner.parent_id.name
-            if not partner_name and partner.is_company:
-                partner_name = partner.name
-
-            values =  {
-                'partner_name': partner_name,
-                'contact_name': partner.name if not partner.is_company else False,
-                'title': partner.title.id,
-                'street': partner.street,
-                'street2': partner.street2,
-                'city': partner.city,
-                'state_id': partner.state_id.id,
-                'country_id': partner.country_id.id,
-                'email_from': partner.email,
-                'phone': partner.phone,
-                'mobile': partner.mobile,
-                'zip': partner.zip,
-                'function': partner.function,
-                'website': partner.website,
-            }
-            values = self._onchange_partner_id_values(self.partner_id.id if self.partner_id else False)
-        self.update(values)"""
