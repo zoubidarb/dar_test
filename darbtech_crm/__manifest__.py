@@ -42,6 +42,6 @@
         'views/templates.xml',
     ],
     "qweb": [
-        "static/src/xml/documentation.xml",
+        "static/src/xml/systray.xml",
         ],
 }
