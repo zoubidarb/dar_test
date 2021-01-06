@@ -18,11 +18,11 @@
 {
     'name': 'Darbtech CRM',
     'summary': 'Darbtech CRM customizations',
-    'description': ''' It consists :
-      * replace referred by many2one
-      * be able to concern multiple partners on leads
-      * changing default action for crm to lead
-      * overwriting default stages for CRM leads
+    'description': ''' It consists :    
+      * Add reminder_date to leads
+      * add leads to web portal
+      * Add a wizard on contact form to create leads
+      * Add sysray navbar for leads
       * many several views adaptations ''',
     'version': '12.0.0.0.1',
     'category': 'Darbtech',
