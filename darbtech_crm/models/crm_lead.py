@@ -35,7 +35,10 @@ class CrmLead(models.Model):
     def onchange_partner_name(self):
         """ Autofill contact_name and title """
         if self.partner_name:
-            parent = self.env['res.partner'].search([('name', '=', self.partner_name)], limit=1)
+            parent = self.env['res.partner'].search([('name', 'ilike', self.partner_name)], limit=1)
+            print('------------------')
+            print(parent)
+            print(self.partner_name)
             if parent:
                 client = self.env['res.partner'].search([('parent_id', '=', parent.id)], limit=1)
                 if client:
